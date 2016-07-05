@@ -28,9 +28,14 @@ class ContatoController extends Controller
      */
     public function index()
     {
-        $contato = $this->repository->paginate();
+        $contato = $this->repository->paginate(5);
 
         return view('admin.contato.index', compact('contato'));
+    }
+
+    public function home()
+    {
+        return view('home.index');
     }
 
     /**
@@ -45,7 +50,7 @@ class ContatoController extends Controller
 
         $this->repository->create($data);
 
-        return redirect()->route('admin.contato.index');
+        return redirect()->route('index');
     }
 
     /**
@@ -69,6 +74,8 @@ class ContatoController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $this->repository->delete($id);
+
+        return redirect()->route('admin.contato.index');
     }
 }

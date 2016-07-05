@@ -1,22 +1,22 @@
 <nav class="menu-container">
     <ul class="menu hover-line">
         <li >
-            <a href="index.html">Home</a>
+            <a href="{{ url('/') }}">Home</a>
         </li>
         <li>
-            <a href="servicos.html">Servi&ccedil;os</a>
+            <a href="{{ url('servicos') }}">Servi&ccedil;os</a>
         </li>
         <li>
-            <a href="parceiros.html">Parceiros</a>
+            <a href="{{ url('parceiros') }}">Parceiros</a>
         </li>
         <!-- <li>
             <a href="blog.html">Blog</a>
         </li>  -->
         <li>
-            <a href="quem-somos.html">Quem somos</a>
+            <a href="{{ url('quem-somos') }}">Quem somos</a>
         </li>
         <li class="reverse">
-            <a href="localizacao.html">Localização</a>
+            <a href="{{ url('localizacao') }}">Localização</a>
         </li>
         <li class="active">
             <a href="{{ url('contato') }}">Fale Conosco</a>

@@ -3,8 +3,8 @@
 <!--[if !IE]><!--> <html> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
-        <title>H2oContabilidade | Societário</title>
-        <meta name="description" content="Multipurpose and creative template">
+        <title>H2oContabilidade | Clientes</title>
+        <meta name="description" content="H2oContabilidade Sorocaba">
 
         <!--[if IE]> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <![endif]-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,12 +17,12 @@
         <link rel="apple-touch-icon" sizes="57x57" href="assets/images/icons/faviconx57.png">
         <link rel="apple-touch-icon" sizes="72x72" href="assets/images/icons/faviconx72.png">
     </head>
-    <body class="single push-menu">
+    <body class="push-menu">
         <div id="mobile-menu-container">
             <div class="mobile-menu-title">Menu <a href="" id="mobile-menu-close">&times;</a></div>
             <ul class="mobile-menu">
                 <li>
-                    <a href="index.html">Home<span class="arrow"></span></a>
+                    <a href="home/index.html">Home<span class="arrow"></span></a>
                 </li>
                 <li>
                     <a href="servicos.html">Servi&ccedil;os<span class="arrow"></span></a>                    
@@ -37,7 +37,7 @@
                     <a href="quem-somos.html">Quem Somos<span class="arrow"></span></a>
                 </li>
                 <li class="reverse">
-                    <a href="localizacao.html">Localiza&ccedil;&atilde;o<span class="arrow"></span></a>
+                    <a href="localizacao/index.blade.php">Localiza&ccedil;&atilde;o<span class="arrow"></span></a>
                 </li>
                 <li class="reverse">
                     <a href="contato.html">Fale Conosco<span class="arrow"></span></a>
@@ -72,7 +72,7 @@
                 <div class="header-inner sticky-menu">
                     <div class="container">
                         <div class="header-left">
-                            <a href="index.html" class="site-logo" title="H2O Contabilidade">
+                            <a href="home/index.html" class="site-logo" title="H2O Contabilidade">
                                 <img src="assets/images/logo.png" alt="Logo">
                             </a>
                         </div><!-- End .header-left -->
@@ -95,13 +95,13 @@
 
                             <nav class="menu-container">
                                 <ul class="menu hover-line">
-                                    <li>
-                                        <a href="index.html">Home</a>
+                                    <li >
+                                        <a href="home/index.html">Home</a>
                                     </li>
-                                    <li class="active">
+                                    <li>
                                         <a href="servicos.html">Servi&ccedil;os</a>
                                     </li>
-                                    <li>
+                                    <li class="active">
                                         <a href="parceiros.html">Parceiros</a>
                                     </li>
                                     <!-- <li>
@@ -111,7 +111,7 @@
                                         <a href="quem-somos.html">Quem somos</a>
                                     </li>
                                     <li class="reverse">
-                                        <a href="localizacao.html">Localização</a>
+                                        <a href="localizacao/index.blade.php">Localização</a>
                                     </li>
                                     <li class="reverse">
                                         <a href="contato.html">Fale Conosco</a>
@@ -127,45 +127,123 @@
             <div class="main">
                 <div class="page-header">
                     <div class="container">
-                        <h1>Societário</h1>
-                        <p>Conheça Nossos Serviços</p>
+                        <h1>Parceiros</h1>
+                        <p>Conhe&ccedil;a Nossos Parceiros</p>
                     </div><!-- End .container -->
                 </div><!-- End .page-header -->
-                <div class="breadcrumb-container mb100">
+                <div class="breadcrumb-container mb90">
                     <div class="container">
                         <ol class="breadcrumb">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="servicos.html">Serviços</a></li>
-                            <li class="active">Societário</li>
+                            <li><a href="home/index.html">Home</a></li>
+                            <li class="active">Parceiros </li>
                         </ol>
                     </div><!-- End .container -->
                 </div><!-- End .breadcrumb-container -->
 
                 <div class="container">
-                    <article class="entry">
-                        <h2 class="entry-title">Serviço Societário H2O.</h2>
-                        <div class="entry-meta">
-                            <span><i class="fa fa-edit"></i>Por <a>Ronaldo Carvalho</a></span>
-                        </div><!-- End .entry-meta -->
-                        <div class="entry-content">
-                            <div class="mb20"></div>
-                            <p>Serviços de assessoria na elaboração e registro de contratos para Empresários Individuais, Todos os tipos de Sociedades, EIRELI, Cooperativas e Associações nos processos de constituição, alteração, transformação, fusão, cisão, incorporação.</p>
-
-
-                            <blockquote>
-                               <h4>O Exemplo da Água </h4>
-                                <p>Para que a água seja pura, cristalina, cheia de minerais e nutrientes, refrescante, gerando e mantendo vidas, ela tem que estar sempre fluindo, não pode parar, deve seguir sempre em frente, acumulando cada vez mais, força e qualidade. Água parada fica suja e apodrece. Da mesma forma, a H2O Contabilidade, acredita que sua empresa, assim como você, não pode parar, não pode desistir antes de completar sua jornada, sua razão de existir, sua missão. Esta é a razão de nossa empresa existir, termos a certeza que os nossos serviços farão toda a diferença na solução de problemas, superação de dificuldades e sucesso da sua empresa..</p>
-                                <cite>Ronaldo Carvalho</cite>
-                            </blockquote>
-                        </div><!-- End .entry-content -->
-                    </article>
+                    <h2 class="title"><span>Nossos Parceiros</span></h2> 
+                    <p></p>
+                    <div class="mb40"></div><!-- margin -->
+                   <!-- <ul id="portfolio-filter">
+                        <li class="active"><a href="#" data-filter="*">Todos</a></li>
+                        <li><a href="#" data-filter=".cliente">Clientes</a></li>
+                        <li><a href="#" data-filter=".parceiro">Parceiros</a></li>
+                    </ul> -->
+                    
+                    <div class="row">
+                        <div id="portfolio-item-container" class="max-col-4 popup-gallery" data-layoutmode="fitRows">
+                            <div class="portfolio-item hover-anim cliente">
+                                <figure>
+                                    <a href="assets/images/page-cliente/toca-do-leao.png" target="_blank" class="zoom-item" title="Toca do Leao"><img src="assets/images/page-cliente/toca-do-leao.png" alt="portfolio item"></a>
+                                </figure>
+                                <div class="portfolio-meta">
+                                    <h3 class="portfolio-title"><a target="_blank" href="http://www.tocadoleao.com.br/">Toca do Leão</a></h3>
+                                    <a target="_blank" class="portfolio-like" href="http://www.tocadoleao.com.br/" title="Web Site">
+                                        <i class="fa fa-globe"></i>
+                                    </a>
+                                </div><!-- End .portfolio-meta -->                     
+                            </div><!-- End .portfolio-item -->
+                            
+                            <div class="portfolio-item hover-anim parceiro ">
+                                <figure>
+                                    <a href="assets/images/page-cliente/frigatto.png" class="zoom-item" title="J.C. Frigatto Advogados"><img src="assets/images/page-cliente/frigatto.png" alt="portfolio item"></a>
+                                </figure>
+                                <div class="portfolio-meta">
+                                    <h3 class="portfolio-title"><a target="_blank" href="http://www.jcfrigattoadvogados.com.br/">J.C. Frigatto Advogados</a></h3>
+                                    <a target="_blank" class="portfolio-like" href="http://www.jcfrigattoadvogados.com.br/" title="Web Site">
+                                        <i class="fa fa-globe"></i>
+                                    </a>
+                                </div><!-- End .portfolio-meta -->                     
+                            </div><!-- End .portfolio-item -->
+                            
+                            <div class="portfolio-item hover-anim cliente ">
+                                <figure>
+                                    <a href="assets/images/page-cliente/stock-guard.png" class="zoom-item" title="StockGuard"><img src="assets/images/page-cliente/stock-guard.png" alt="portfolio item"></a>
+                                </figure>
+                                <div class="portfolio-meta">
+                                    <h3 class="portfolio-title"><a target="_blank" href="http://www.stockguard.com.br/">StockGuard</a></h3>
+                                    <a target="_blank" class="portfolio-like" href="http://www.stockguard.com.br/" title="Web Site">
+                                        <i class="fa fa-globe"></i>
+                                    </a>
+                                </div><!-- End .portfolio-meta -->                     
+                            </div><!-- End .portfolio-item -->
+                            
+                            <div class="portfolio-item hover-anim parceiro">
+                                <figure>
+                                    <a href="assets/images/page-cliente/dalmazzoecastro.png" class="zoom-item" title="Dalmazzo & castro Advogados"><img src="assets/images/page-cliente/dalmazzoecastro.png" alt="portfolio item"></a>
+                                </figure>
+                                <div class="portfolio-meta">
+                                    <h3 class="portfolio-title"><a target="_blank" href="http://dalmazzoecastro.com.br/">Dalmazzo & castro Advogados</a></h3>
+                                    <a target="_blank" class="portfolio-like" href="http://dalmazzoecastro.com.br/" title="Web Site">
+                                        <i class="fa fa-globe"></i>
+                                    </a>
+                                </div><!-- End .portfolio-meta -->                     
+                            </div><!-- End .portfolio-item -->
+                            
+                            <div class="portfolio-item hover-anim parceiro">
+                                <figure>
+                                    <a href="assets/images/page-cliente/sky-ambiental.png" class="zoom-item" title="Sky Ambiental"><img src="assets/images/page-cliente/sky-ambiental.png" alt="portfolio item"></a>
+                                </figure>
+                                <div class="portfolio-meta">
+                                    <h3 class="portfolio-title"><a target="_blank" href="http://skyambiental.com.br/br">Sky Ambiental</a></h3>
+                                    <a target="_blank" class="portfolio-like" href="http://skyambiental.com.br/br" title="Web Site">
+                                        <i class="fa fa-globe"></i>
+                                    </a>
+                                </div><!-- End .portfolio-meta -->                     
+                            </div><!-- End .portfolio-item -->
+                            
+                            <div class="portfolio-item hover-anim parceiro cliente">
+                                <figure>
+                                    <a href="assets/images/page-cliente/prev-life.png" class="zoom-item" title="Prev Life"><img src="assets/images/page-cliente/prev-life.png" alt="portfolio item"></a>
+                                </figure>
+                                <div class="portfolio-meta">
+                                    <h3 class="portfolio-title"><a target="_blank" href="http://www.prevlife.com/">PrevLife</a></h3>
+                                    <a target="_blank" class="portfolio-like" href="http://www.prevlife.com/" title="Web Site">
+                                        <i class="fa fa-globe"></i>
+                                    </a>
+                                </div><!-- End .portfolio-meta -->                     
+                            </div><!-- End .portfolio-item -->
+                            
+                            
+                            
+                            
+                            
+                           
+                            
+                            
+                            
+                        </div><!-- End #portfolio-item-container -->
+                    </div><!-- End .row -->
                 </div><!-- End .container -->
+
+                <div class="mb70"></div><!-- margin -->
             </div><!-- End .main -->
 
+            
             <footer class="footer">
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-6 col-md-3">
+                       <div class="col-sm-6 col-md-3">
                             <div class="widget widget-about">
                                 <img src="assets/images/footer-logo.png" alt="The Legend" class="img-responsive">
                                 <p>Assim como a Água (fórmula química H2O) é considerada como um dos principais elementos importantes à vida do nosso Planeta, também os nossos serviços e relacionamentos com os nossos clientes estão pautados em três de suas características: sermos Transparentes, Essenciais e Confiáveis.</p>
@@ -174,14 +252,9 @@
                         </div><!-- End .col-sm-6 -->
                         <div class="col-sm-6 col-md-3">
                             <div class="widget widget-popular-posts">
-                                <h4 class="widget-title"><i class="fa fa-angle-double-right"></i>Menu</h4>
+                                <h4 class="widget-title"><i class="fa fa-angle-double-right"></i>Área do Cliente</h4>
                                 <ul class="links">
-                                    <li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
-                                    <li><a href="servicos.html"><i class="fa fa-industry"></i>Serviços</a></li>
-                                    <li><a href="clientes.html"><i class="fa fa-users"></i>Clientes</a></li>
-                                    <li><a href="quem-somos.html"><i class="fa fa-user"></i>Quem Somos</a></li>
-                                    <li><a href="localizacao.html"><i class="fa fa-map-marker"></i>Localização</a></li>
-                                    <li><a href="quem-somos.html"><i class="fa fa-envelope"></i>Quem Somos</a></li>
+                                    <li><a href="#"><i class="fa fa-users"></i>Login</a></li>
                                 </ul>
                             </div><!-- End .widget -->
                         </div><!-- End .col-sm-6 -->
@@ -218,14 +291,15 @@
                 <div class="footer-bottom">
                     <div class="container">
                         <div class="text-center">
-                            <p class="copyright">Copyright 2014 H2O Contabilidade
+                            <p class="copyright">Todos os direitos reservados. 2016 <span class="separator">l</span> H2O Contabilidade
                                 <span class="separator">l</span>Desenvolvido por 
-                                <a href="http://robots.com.br/">Robots Tecnologia</a>
+                                <a href="http://robots.com.br/" target="_blank">Robots Tecnologia</a>
                             </p>
                         </div><!-- End .footer-left -->
                     </div><!-- End .container -->
                 </div><!-- End .footer-bottom -->
             </footer>
+            
             
             
            <!-- SCRIPT FACEBOOK LIKE --> 

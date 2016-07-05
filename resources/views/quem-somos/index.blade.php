@@ -18,33 +18,7 @@
         <link rel="apple-touch-icon" sizes="72x72" href="assets/images/icons/faviconx72.png">
     </head>
     <body class="push-menu">
-        <div id="mobile-menu-container">
-            <div class="mobile-menu-title">Menu <a href="" id="mobile-menu-close">&times;</a></div>
-            <ul class="mobile-menu">
-                <li>
-                    <a href="index.html">Home<span class="arrow"></span></a>
-                </li>
-                <li>
-                    <a href="servicos.html">Servi&ccedil;os<span class="arrow"></span></a>                    
-                </li>
-                <li>
-                    <a href="parceiros.html">Parceiros<span class="arrow"></span></a>
-                </li>
-               <!-- <li>
-                    <a href="blog.html">Blog<span class="arrow"></span></a>
-                </li> -->
-                <li class="reverse">
-                    <a href="quem-somos.html">Quem Somos<span class="arrow"></span></a>
-                </li>
-                <li class="reverse">
-                    <a href="localizacao.html">Localiza&ccedil;&atilde;o<span class="arrow"></span></a>
-                </li>
-                <li class="reverse">
-                    <a href="contato.html">Fale Conosco<span class="arrow"></span></a>
-                </li>
-                
-            </ul>
-        </div><!-- End #mobile-menu-container -->
+        @include('includes.topo-responsivo')
         <div id="mobile-menu-overlay"></div><!-- End #mobile-menu-overlay -->
         <div id="wrapper">
             <header class="header">   
@@ -71,7 +45,7 @@
                 <div class="header-inner sticky-menu">
                     <div class="container">
                         <div class="header-left">
-                            <a href="index.html" class="site-logo" title="H2O Contabilidade">
+                            <a href="home/index.html" class="site-logo" title="H2O Contabilidade">
                                 <img src="assets/images/logo.png" alt="Logo">
                             </a>
                         </div><!-- End .header-left -->
@@ -92,31 +66,7 @@
                                 </div><!-- End. dropdown-menu -->
                           <!--  </div> --> <!-- End. dropdown -->
 
-                            <nav class="menu-container">
-                                <ul class="menu hover-line">
-                                    <li >
-                                        <a href="index.html">Home</a>
-                                    </li>
-                                    <li>
-                                        <a href="servicos.html">Servi&ccedil;os</a>
-                                    </li>
-                                    <li>
-                                        <a href="parceiros.html">Parceiros</a>
-                                    </li>
-                                    <!-- <li>
-                                        <a href="blog.html">Blog</a>
-                                    </li>  -->
-                                    <li class="active">
-                                        <a href="quem-somos.html">Quem somos</a>
-                                    </li>
-                                    <li class="reverse">
-                                        <a href="localizacao.html">Localização</a>
-                                    </li>
-                                    <li class="reverse">
-                                        <a href="contato.html">Fale Conosco</a>
-                                    </li>
-                                </ul>
-                            </nav>
+                            @include('includes.topo')
                             
                         </div><!-- End .header-right -->
                     </div><!-- End. container -->
@@ -133,7 +83,7 @@
                 <div class="breadcrumb-container mb100">
                     <div class="container">
                         <ol class="breadcrumb">
-                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="home/index.html">Inicio</a></li>
                             <li class="active">Quem Somos</li>
                         </ol>
                     </div><!-- End .container -->
@@ -228,83 +178,6 @@
                 </div><!-- End .bg-gray -->
             </div><!-- End .main -->
 
-                    <footer class="footer">
-                <div class="container">
-                    <div class="row">
-                       <div class="col-sm-6 col-md-3">
-                            <div class="widget widget-about">
-                                <img src="assets/images/footer-logo.png" alt="The Legend" class="img-responsive">
-                                <p>Assim como a Água (fórmula química H2O) é considerada como um dos principais elementos importantes à vida do nosso Planeta, também os nossos serviços e relacionamentos com os nossos clientes estão pautados em três de suas características: sermos Transparentes, Essenciais e Confiáveis.</p>
-                                <a href="quem-somos.html">Leia Mais</a>
-                            </div><!-- End .widget -->
-                        </div><!-- End .col-sm-6 -->
-                        <div class="col-sm-6 col-md-3">
-                            <div class="widget widget-popular-posts">
-                                <h4 class="widget-title"><i class="fa fa-angle-double-right"></i>Área do Cliente</h4>
-                                <ul class="links">
-                                    <li><a href="#"><i class="fa fa-users"></i>Login</a></li>
-                                </ul>
-                            </div><!-- End .widget -->
-                        </div><!-- End .col-sm-6 -->
-                        <div class="clearfix visible-sm"></div><!-- space -->
-                        <div class="col-sm-6 col-md-3">
-                            <div class="widget">
-                                <h4 class="widget-title"><i class="fa fa-angle-double-right"></i>Tags</h4>
-                                <div class="tagcloud">
-                                    <a >Contabilidade</a>
-                                    <a >Sorocaba</a>
-                                    <a >Fiscal</a>
-                                    <a >DP</a>
-                                    <a >T.I</a>
-                                    <a >Tecnologia</a>
-                                    <a >H2O</a>
-                                    <a >Transparente</a>
-                                </div><!-- End .tagcloud -->
-                            </div><!-- End .widget -->
-                        </div><!-- End .col-sm-6 -->
-                        <div class="col-sm-6 col-md-3">
-                            <div class="widget widget-recent-posts">
-                                <h4 class="widget-title"><i class="fa fa-angle-double-right"></i>Facebook</h4>
-                                <div class="fb-page" data-href="https://www.facebook.com/h2ocontabilidade/" data-tabs="likes" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-                                    <blockquote cite="https://www.facebook.com/h2ocontabilidade/" class="fb-xfbml-parse-ignore">
-                                        <a href="https://www.facebook.com/h2ocontabilidade/">H2O contabilidade</a>
-                                    </blockquote>
-                                </div>
-                            </div><!-- End .widget -->
-                        </div><!-- End .col-sm-6 -->
-                        
-                    </div><!-- End .row -->
-                </div><!-- End .container -->
-
-                <div class="footer-bottom">
-                    <div class="container">
-                        <div class="text-center">
-                            <p class="copyright">Todos os direitos reservados. 2016 <span class="separator">l</span> H2O Contabilidade
-                                <span class="separator">l</span>Desenvolvido por 
-                                <a href="http://robots.com.br/" target="_blank">Robots Tecnologia</a>
-                            </p>
-                        </div><!-- End .footer-left -->
-                    </div><!-- End .container -->
-                </div><!-- End .footer-bottom -->
-            </footer>
-            
-           <!-- SCRIPT FACEBOOK LIKE --> 
-            <div id="fb-root"></div>
-            <script>(function(d, s, id) {
-              var js, fjs = d.getElementsByTagName(s)[0];
-              if (d.getElementById(id)) return;
-              js = d.createElement(s); js.id = id;
-              js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.6&appId=590871694411243";
-              fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));</script>
-          <!-- END SCRIPT FACEBOOK LIKE -->
-
-        </div><!-- End #wrapper -->
-        <a id="scroll-top" href="#top" title="Scroll top"><i class="fa fa-angle-up"></i></a>
-
-        <!-- End -->
-        <script src="assets/js/plugins.min.js"></script>
-        <script src="assets/js/twitter/jquery.tweet.min.js"></script>
-        <script src="assets/js/main.js"></script>
+                    @include('includes.footer')
     </body>
 </html>

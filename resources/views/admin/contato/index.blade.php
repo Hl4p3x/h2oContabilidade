@@ -12,7 +12,6 @@
                     <th>Código</th>
                     <th>Nome</th>
                     <th>Email</th>
-                    <th>Assunto</th>
                     <th>Ação</th>
                 </thead>
             </tr>
@@ -23,7 +22,6 @@
                         <td>{{ $c->id }}</td>
                         <td><a href="{{ route('admin.contato.show', [$c->id])}}">{{ $c->nome }}</a></td>
                         <td>{{ $c->email }}</td>
-                        <td>{{ $c->assunto }}</td>
                         <td><a href="{{ route('admin.contato.destroy', [$c->id]) }}"><span class="glyphicon glyphicon-trash"></span></a></td>
                     </tr>
                 @endforeach

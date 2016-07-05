@@ -20,8 +20,8 @@
     </head>
     <body class="push-menu">
        
-       
-        @include('menu.topo-responsivo')
+
+        @include('includes.topo-responsivo')
         <div id="mobile-menu-overlay"></div><!-- End #mobile-menu-overlay -->
         <div id="wrapper">
             <header class="header">   
@@ -48,7 +48,7 @@
                 <div class="header-inner sticky-menu">
                     <div class="container">
                         <div class="header-left">
-                            <a href="index.html" class="site-logo" title="H2O Contabilidade">
+                            <a href="{{ url('home') }}" class="site-logo" title="H2O Contabilidade">
                                 <img src="assets/images/logo.png" alt="Logo">
                             </a>
                         </div><!-- End .header-left -->
@@ -69,7 +69,7 @@
                                 </div><!-- End. dropdown-menu -->
                           <!--  </div> --> <!-- End. dropdown -->
 
-                            @include('menu.topo')
+                            @include('includes.topo')
                             
                         </div><!-- End .header-right -->
                     </div><!-- End. container -->
@@ -86,7 +86,7 @@
                 <div class="breadcrumb-container">
                     <div class="container">
                         <ol class="breadcrumb">
-                            <li><a href="index.html">Home</a></li>
+                            <li><a href="{{ url('home') }}">Home</a></li>
                             <li class="active">Contato</li>
                         </ol>
                     </div><!-- End .container -->
@@ -148,7 +148,7 @@
 
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <textarea class="form-control" rows="6" id="contactmessage" name="mensagem" placeholder="Mensagem *" required></textarea>
+                                        {!! Form::textarea('mensagem', null, ['class' => 'form-control', 'rows' => "6", 'placeholder'=>"Mensagem *", 'required' => 'required']) !!}
                                     </div><!-- End .col-md-12 -->
                                 </div><!-- End .row -->
 
@@ -164,86 +164,6 @@
 
             </div><!-- End .main -->
 
-                    <footer class="footer">
-                <div class="container">
-                    <div class="row">
-                       <div class="col-sm-6 col-md-3">
-                            <div class="widget widget-about">
-                                <img src="assets/images/footer-logo.png" alt="The Legend" class="img-responsive">
-                                <p>Assim como a Água (fórmula química H2O) é considerada como um dos principais elementos importantes à vida do nosso Planeta, também os nossos serviços e relacionamentos com os nossos clientes estão pautados em três de suas características: sermos Transparentes, Essenciais e Confiáveis.</p>
-                                <a href="quem-somos.html">Leia Mais</a>
-                            </div><!-- End .widget -->
-                        </div><!-- End .col-sm-6 -->
-                        <div class="col-sm-6 col-md-3">
-                            <div class="widget widget-popular-posts">
-                                <h4 class="widget-title"><i class="fa fa-angle-double-right"></i>Área do Cliente</h4>
-                                <ul class="links">
-                                    <li><a href="#"><i class="fa fa-users"></i>Login</a></li>
-                                </ul>
-                            </div><!-- End .widget -->
-                        </div><!-- End .col-sm-6 -->
-                        <div class="clearfix visible-sm"></div><!-- space -->
-                        <div class="col-sm-6 col-md-3">
-                            <div class="widget">
-                                <h4 class="widget-title"><i class="fa fa-angle-double-right"></i>Tags</h4>
-                                <div class="tagcloud">
-                                    <a >Contabilidade</a>
-                                    <a >Sorocaba</a>
-                                    <a >Fiscal</a>
-                                    <a >DP</a>
-                                    <a >T.I</a>
-                                    <a >Tecnologia</a>
-                                    <a >H2O</a>
-                                    <a >Transparente</a>
-                                </div><!-- End .tagcloud -->
-                            </div><!-- End .widget -->
-                        </div><!-- End .col-sm-6 -->
-                        <div class="col-sm-6 col-md-3">
-                            <div class="widget widget-recent-posts">
-                                <h4 class="widget-title"><i class="fa fa-angle-double-right"></i>Facebook</h4>
-                                <div class="fb-page" data-href="https://www.facebook.com/h2ocontabilidade/" data-tabs="likes" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-                                    <blockquote cite="https://www.facebook.com/h2ocontabilidade/" class="fb-xfbml-parse-ignore">
-                                        <a href="https://www.facebook.com/h2ocontabilidade/">H2O contabilidade</a>
-                                    </blockquote>
-                                </div>
-                            </div><!-- End .widget -->
-                        </div><!-- End .col-sm-6 -->
-                        
-                    </div><!-- End .row -->
-                </div><!-- End .container -->
-
-                <div class="footer-bottom">
-                    <div class="container">
-                        <div class="text-center">
-                            <p class="copyright">Todos os direitos reservados. 2016 <span class="separator">l</span> H2O Contabilidade
-                                <span class="separator">l</span>Desenvolvido por 
-                                <a href="http://robots.com.br/" target="_blank">Robots Tecnologia</a>
-                            </p>
-                        </div><!-- End .footer-left -->
-                    </div><!-- End .container -->
-                </div><!-- End .footer-bottom -->
-            </footer>
-            
-           <!-- SCRIPT FACEBOOK LIKE --> 
-            <div id="fb-root"></div>
-            <script>(function(d, s, id) {
-              var js, fjs = d.getElementsByTagName(s)[0];
-              if (d.getElementById(id)) return;
-              js = d.createElement(s); js.id = id;
-              js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.6&appId=590871694411243";
-              fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));</script>
-          <!-- END SCRIPT FACEBOOK LIKE -->
-
-        </div><!-- End #wrapper -->
-        <a id="scroll-top" href="#top" title="Scroll top"><i class="fa fa-angle-up"></i></a>
-
-        <!-- End -->
-        <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
-
-        <script src="assets/js/plugins.min.js"></script>
-        <script src="assets/js/jquery.validate.min.js"></script>
-        <script src="assets/js/contact.js"></script>
-        <script src="assets/js/main.js"></script>
+        @include('includes.footer')
     </body>
 </html>

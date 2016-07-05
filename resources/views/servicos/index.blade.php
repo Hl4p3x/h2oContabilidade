@@ -18,33 +18,7 @@
         <link rel="apple-touch-icon" sizes="72x72" href="assets/images/icons/faviconx72.png">
     </head>
     <body class="push-menu">
-        <div id="mobile-menu-container">
-            <div class="mobile-menu-title">Menu <a href="" id="mobile-menu-close">&times;</a></div>
-            <ul class="mobile-menu">
-                <li>
-                    <a href="index.html">Home<span class="arrow"></span></a>
-                </li>
-                <li>
-                    <a href="servicos.html">Servi&ccedil;os<span class="arrow"></span></a>                    
-                </li>
-                <li>
-                    <a href="parceiros.html">Parceiros<span class="arrow"></span></a>
-                </li>
-               <!-- <li>
-                    <a href="blog.html">Blog<span class="arrow"></span></a>
-                </li> -->
-                <li class="reverse">
-                    <a href="quem-somos.html">Quem Somos<span class="arrow"></span></a>
-                </li>
-                <li class="reverse">
-                    <a href="localizacao.html">Localiza&ccedil;&atilde;o<span class="arrow"></span></a>
-                </li>
-                <li class="reverse">
-                    <a href="contato.html">Fale Conosco<span class="arrow"></span></a>
-                </li>
-                
-            </ul>
-        </div><!-- End #mobile-menu-container -->
+        @include('includes.topo-responsivo')
         
         <div id="mobile-menu-overlay"></div><!-- End #mobile-menu-overlay -->
         <div id="wrapper">
@@ -72,7 +46,7 @@
                 <div class="header-inner sticky-menu">
                     <div class="container">
                         <div class="header-left">
-                            <a href="index.html" class="site-logo" title="H2O Contabilidade">
+                            <a href="home/index.html" class="site-logo" title="H2O Contabilidade">
                                 <img src="assets/images/logo.png" alt="Logo">
                             </a>
                         </div><!-- End .header-left -->
@@ -93,31 +67,7 @@
                                 </div><!-- End. dropdown-menu -->
                           <!--  </div> --> <!-- End. dropdown -->
 
-                            <nav class="menu-container">
-                                <ul class="menu hover-line">
-                                    <li >
-                                        <a href="index.html">Home</a>
-                                    </li>
-                                    <li class="active">
-                                        <a href="servicos.html">Servi&ccedil;os</a>
-                                    </li>
-                                    <li>
-                                        <a href="parceiros.html">Parceiros</a>
-                                    </li>
-                                    <!-- <li>
-                                        <a href="blog.html">Blog</a>
-                                    </li>  -->
-                                    <li>
-                                        <a href="quem-somos.html">Quem somos</a>
-                                    </li>
-                                    <li class="reverse">
-                                        <a href="localizacao.html">Localização</a>
-                                    </li>
-                                    <li class="reverse">
-                                        <a href="contato.html">Fale Conosco</a>
-                                    </li>
-                                </ul>
-                            </nav>
+                            @include('includes.topo')
                             
                         </div><!-- End .header-right -->
                     </div><!-- End. container -->
@@ -134,7 +84,7 @@
                 <div class="breadcrumb-container mb95">
                     <div class="container">
                         <ol class="breadcrumb">
-                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="{{ url('home') }}">Inicio</a></li>
                             <li class="active">Servi&ccedil;os</li>
                         </ol>
                     </div><!-- End .container -->
@@ -149,7 +99,7 @@
                                     </div><!-- End .service-icon-container -->
                                     <h3 class="service-title">Contabilidade</h3>
                                     <p>Nosso departamento contábil conta com modernas instalações com a softwares e hardwares de ponta somados a uma equipe técnica de competentes profissionais . . .</p>
-                                    <a href="serv-contabil.html" class="btn btn-custom btn-border btn-rounded btn-sm">Leia mais 
+                                    <a href="{{ url('serv-contabil') }}" class="btn btn-custom btn-border btn-rounded btn-sm">Leia mais
                                         <i class="fa fa-angle-right"></i>
                                     </a>
                                 </div><!-- End .service-box -->
@@ -162,7 +112,7 @@
                                     </div>
                                     <h3 class="service-title">Fiscal e Tributário</h3>
                                     <p>O Departamento de assessoria Fiscal e Tributária de nossa empresa, tem sido um dos nossos diferenciais, que tem por objetivo, apresentar aos nossos clientes, soluções de . . . </p>
-                                    <a href="serv-fisc.html" class="btn btn-custom btn-border btn-rounded btn-sm">Leia mais 
+                                    <a href="{{ url('serv-fisc') }}" class="btn btn-custom btn-border btn-rounded btn-sm">Leia mais
                                         <i class="fa fa-angle-right"></i>
                                     </a>
                                 </div><!-- End .service-box -->
@@ -175,7 +125,7 @@
                                     </div><!-- End .service-icon-container -->
                                     <h3 class="service-title">Trabalhista e Previdenciário</h3>
                                     <p>A assessoria Trabalhista e Previdenciária, através de profissionais treinados para este tipo de atendimento, conta com soluções de tecnologia da informação que simplificam e tornam .</p>
-                                    <a href="serv-trab.html" class="btn btn-custom btn-border btn-rounded btn-sm">Leia mais 
+                                    <a href="{{ url('serv-trab') }}" class="btn btn-custom btn-border btn-rounded btn-sm">Leia mais
                                         <i class="fa fa-angle-right"></i>
                                     </a>
                                 </div><!-- End .service-box -->
@@ -194,7 +144,7 @@
                                     </div><!-- End .service-icon-container -->
                                     <h3 class="service-title">Societário</h3>
                                     <p>Serviços de assessoria na elaboração e registro de contratos para Empresários Individuais, Todos os tipos de Sociedades, EIRELI, Cooperativas e Associações nos processos de. . .</p>
-                                    <a href="serv-socie.html" class="btn btn-custom btn-border btn-rounded btn-sm">Leia mais 
+                                    <a href="{{ url('serv-socie') }}" class="btn btn-custom btn-border btn-rounded btn-sm">Leia mais
                                         <i class="fa fa-angle-right"></i>
                                     </a>
                                 </div><!-- End .service-box -->
@@ -207,7 +157,7 @@
                                     </div>
                                     <h3 class="service-title">Soluções de T.I.</h3>
                                     <p>Contamos uma equipe de profissionais e de empresas parceiras de negócios preparados para atender às necessidades de nossos clientes na área de T.I. (Tecnologia da Informação . . .</p>
-                                    <a href="serv-ti.html" class="btn btn-custom btn-border btn-rounded btn-sm">Leia mais 
+                                    <a href="{{ url('serv-ti') }}" class="btn btn-custom btn-border btn-rounded btn-sm">Leia mais
                                         <i class="fa fa-angle-right"></i>
                                     </a>
                                 </div><!-- End .service-box -->
@@ -220,7 +170,7 @@
                                     </div><!-- End .service-icon-container -->
                                     <h3 class="service-title">Treinamentos e Palestras</h3>
                                     <p>A H2O dispõe de um auditório para 42 pessoas, equipado com modernas instalações, visando o Treinamento e Capacitação do Capital do Humano de seus clientes e parceiros . . .</p>
-                                    <a href="serv-treina.html" class="btn btn-custom btn-border btn-rounded btn-sm">Leia mais 
+                                    <a href="{{ url('serv-treina') }}" class="btn btn-custom btn-border btn-rounded btn-sm">Leia mais
                                         <i class="fa fa-angle-right"></i>
                                     </a>
                                 </div><!-- End .service-box -->
@@ -239,7 +189,7 @@
                                     </div><!-- End .service-icon-container -->
                                     <h3 class="service-title">Planejamento Financeiro </h3>
                                     <p>Por ser o principal responsável pelo insucesso de muitos gestores, acreditamos que a elaboração e utilização correta de um planejamento financeiro adequado, seja um dos . . .</p>
-                                    <a href="serv-plane.html" class="btn btn-custom btn-border btn-rounded btn-sm">Leia mais 
+                                    <a href="{{ url('serv-plane') }}" class="btn btn-custom btn-border btn-rounded btn-sm">Leia mais
                                         <i class="fa fa-angle-right"></i>
                                     </a>
                                 </div><!-- End .service-box -->
@@ -252,7 +202,7 @@
                                     </div>
                                     <h3 class="service-title">Gestão Estratégica</h3>
                                     <p>A H2O juntamente com o empenho de profissionais e empresas parceiras, está preparada para lhe oferecer ferramentas dar-lhe suporte em projetos de gestão para. . .</p>
-                                    <a href="serv-gest.html" class="btn btn-custom btn-border btn-rounded btn-sm">Leia mais 
+                                    <a href="{{ url('serv-gest') }}" class="btn btn-custom btn-border btn-rounded btn-sm">Leia mais
                                         <i class="fa fa-angle-right"></i>
                                     </a>
                                 </div><!-- End .service-box -->
@@ -265,7 +215,7 @@
                                     </div><!-- End .service-icon-container -->
                                     <h3 class="service-title">Diagnóstico Empresarial</h3>
                                     <p>Utilizando-se de minucioso processo investigativo das áreas financeira, contábil, fiscal e trabalhista, os profissionais e empresas parceiras da H2O, elaboram um . . .</p>
-                                    <a href="serv-diag.html" class="btn btn-custom btn-border btn-rounded btn-sm">Leia mais 
+                                    <a href="{{ url('serv-diag') }}" class="btn btn-custom btn-border btn-rounded btn-sm">Leia mais
                                         <i class="fa fa-angle-right"></i>
                                     </a>
                                 </div><!-- End .service-box -->
@@ -284,7 +234,7 @@
                                     </div><!-- End .service-icon-container -->
                                     <h3 class="service-title">Legalização de Empresas</h3>
                                     <p>Através de experientes profissionais, dispomos de soluções eficazes para os procedimentos de: Abertura, Regularização, Alteração, Transformação e Encerramento de . . .</p>
-                                    <a href="serv-lega.html" class="btn btn-custom btn-border btn-rounded btn-sm">Leia mais 
+                                    <a href="{{ url('serv-lega') }}" class="btn btn-custom btn-border btn-rounded btn-sm">Leia mais
                                         <i class="fa fa-angle-right"></i>
                                     </a>
                                 </div><!-- End .service-box -->
@@ -305,7 +255,7 @@
 
                 <div class="bg-gray border pt100 pb100">
                     <div class="container">
-                        <h2 class="title text-center"><span>NOSSOs CLIENTES</span></h2>
+                        <h2 class="title text-center"><span>NOSSOS CLIENTES</span></h2>
                         <p class="text-center"></p>
 
                         <div class="mb60"></div><!-- margin -->
@@ -341,83 +291,6 @@
                 </div><!-- End .bg-gray -->
             </div><!-- End .main -->
 
-              <footer class="footer">
-                <div class="container">
-                    <div class="row">
-                       <div class="col-sm-6 col-md-3">
-                            <div class="widget widget-about">
-                                <img src="assets/images/footer-logo.png" alt="The Legend" class="img-responsive">
-                                <p>Assim como a Água (fórmula química H2O) é considerada como um dos principais elementos importantes à vida do nosso Planeta, também os nossos serviços e relacionamentos com os nossos clientes estão pautados em três de suas características: sermos Transparentes, Essenciais e Confiáveis.</p>
-                                <a href="quem-somos.html">Leia Mais</a>
-                            </div><!-- End .widget -->
-                        </div><!-- End .col-sm-6 -->
-                        <div class="col-sm-6 col-md-3">
-                            <div class="widget widget-popular-posts">
-                                <h4 class="widget-title"><i class="fa fa-angle-double-right"></i>Área do Cliente</h4>
-                                <ul class="links">
-                                    <li><a href="#"><i class="fa fa-users"></i>Login</a></li>
-                                </ul>
-                            </div><!-- End .widget -->
-                        </div><!-- End .col-sm-6 -->
-                        <div class="clearfix visible-sm"></div><!-- space -->
-                        <div class="col-sm-6 col-md-3">
-                            <div class="widget">
-                                <h4 class="widget-title"><i class="fa fa-angle-double-right"></i>Tags</h4>
-                                <div class="tagcloud">
-                                    <a >Contabilidade</a>
-                                    <a >Sorocaba</a>
-                                    <a >Fiscal</a>
-                                    <a >DP</a>
-                                    <a >T.I</a>
-                                    <a >Tecnologia</a>
-                                    <a >H2O</a>
-                                    <a >Transparente</a>
-                                </div><!-- End .tagcloud -->
-                            </div><!-- End .widget -->
-                        </div><!-- End .col-sm-6 -->
-                        <div class="col-sm-6 col-md-3">
-                            <div class="widget widget-recent-posts">
-                                <h4 class="widget-title"><i class="fa fa-angle-double-right"></i>Facebook</h4>
-                                <div class="fb-page" data-href="https://www.facebook.com/h2ocontabilidade/" data-tabs="likes" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-                                    <blockquote cite="https://www.facebook.com/h2ocontabilidade/" class="fb-xfbml-parse-ignore">
-                                        <a href="https://www.facebook.com/h2ocontabilidade/">H2O contabilidade</a>
-                                    </blockquote>
-                                </div>
-                            </div><!-- End .widget -->
-                        </div><!-- End .col-sm-6 -->
-                        
-                    </div><!-- End .row -->
-                </div><!-- End .container -->
-
-                <div class="footer-bottom">
-                    <div class="container">
-                        <div class="text-center">
-                            <p class="copyright">Todos os direitos reservados. 2016 <span class="separator">l</span> H2O Contabilidade
-                                <span class="separator">l</span>Desenvolvido por 
-                                <a href="http://robots.com.br/" target="_blank">Robots Tecnologia</a>
-                            </p>
-                        </div><!-- End .footer-left -->
-                    </div><!-- End .container -->
-                </div><!-- End .footer-bottom -->
-            </footer>                    
-            
-           <!-- SCRIPT FACEBOOK LIKE --> 
-            <div id="fb-root"></div>
-            <script>(function(d, s, id) {
-              var js, fjs = d.getElementsByTagName(s)[0];
-              if (d.getElementById(id)) return;
-              js = d.createElement(s); js.id = id;
-              js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.6&appId=590871694411243";
-              fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));</script>
-          <!-- END SCRIPT FACEBOOK LIKE -->
-
-        </div><!-- End #wrapper -->
-        <a id="scroll-top" href="#top" title="Scroll top"><i class="fa fa-angle-up"></i></a>
-
-        <!-- End -->
-        <script src="assets/js/plugins.min.js"></script>
-        <script src="assets/js/twitter/jquery.tweet.min.js"></script>
-        <script src="assets/js/main.js"></script>
+              @include('includes.footer')
     </body>
 </html>
