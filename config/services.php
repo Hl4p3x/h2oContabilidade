@@ -30,7 +30,7 @@ return [
     ],
 
     'stripe' => [
-        'model'  => Excel\User::class,
+        'model'  => h2o\User::class,
         'key' => '',
         'secret' => '',
     ],

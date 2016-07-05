@@ -23,7 +23,7 @@
             "database"
         ],
         "psr-4": {
-            "Excel\\": "app/"
+            "h2o\\": "app/"
         }
     },
     "autoload-dev": {

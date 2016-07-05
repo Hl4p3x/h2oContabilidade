@@ -1,0 +1,102 @@
+/* 
+
+Template Name: The Legend Multipurpose Template
+Template URI: #
+Author: Eon
+
+---------- Table Of Contents --------- //
+-------- 1-  General
+-------- 2-  Typography
+-------- 3-  Breadcrumbs
+-------- 4-  Buttons
+-------- 5-  Shortcodes
+-------- 6-  Header
+-------- 7-  Page Header
+-------- 8-  Homepages
+-------- 9-  About
+-------- 10- Blog
+-------- 11- Portfolio
+-------- 12- 404 Page
+-------- 13- Contact Page
+-------- 14- Footer
+--------- End Table Of Contents ------ //
+
+*/
+
+/* Import Google Fonts */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800,300italic,600italic,700italic,800italic|Lato:400,100,300,700,900,100italic,300italic,400italic,700italic);
+
+
+@import 'mixins';
+@import 'variables';
+
+
+/* ----------- 1.General --------------
+--------------------------------------*/
+@import 'general';
+
+
+/* ----------- 2.Typography ------------
+--------------------------------------*/
+@import 'typography';
+
+
+/* ----------- 3.Breadcrumbs -----------
+--------------------------------------*/
+@import 'breadcrumbs';
+
+
+/* ----------- 4.Buttons -------------
+--------------------------------------*/
+@import 'buttons';
+
+
+/* ----------- 5.Shortcodes ------------
+--------------------------------------*/
+@import 'shortcodes';
+
+
+/* ----------- 6.Header ---------------
+--------------------------------------*/
+@import 'header';
+
+
+/* ----------- 7.Page Header ---------
+--------------------------------------*/
+@import 'pageheaders';
+
+
+/* ----------- 8.Homepages -------------
+--------------------------------------*/
+@import 'homepages';
+
+
+/* ----------- 9.About -----------------
+--------------------------------------*/
+@import 'about';
+
+
+/* ----------- 10.Blog -----------------
+--------------------------------------*/
+@import 'blog';
+
+
+/* ----------- 11.Portfolio -------------
+--------------------------------------*/
+@import 'portfolio';
+
+
+/* ----------- 12.404 Page --------------
+--------------------------------------*/
+@import '404';
+
+
+/* ----------- 13.Contact Page ----------
+--------------------------------------*/
+@import 'forms';
+@import 'contact';
+
+
+/* ----------- 14.Footer ---------------
+--------------------------------------*/
+@import 'footer';

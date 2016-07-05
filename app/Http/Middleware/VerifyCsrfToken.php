@@ -1,6 +1,6 @@
 <?php
 
-namespace Excel\Http\Middleware;
+namespace h2o\Http\Middleware;
 
 use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken as BaseVerifier;
 

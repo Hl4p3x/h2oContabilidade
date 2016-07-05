@@ -1,6 +1,6 @@
 <?php
 
-namespace Excel\Jobs;
+namespace h2o\Jobs;
 
 use Illuminate\Bus\Queueable;
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace Excel\Http\Controllers\Auth;
+namespace h2o\Http\Controllers\Auth;
 
-use Excel\Http\Controllers\Controller;
+use h2o\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ResetsPasswords;
 
 class PasswordController extends Controller

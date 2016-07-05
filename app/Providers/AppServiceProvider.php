@@ -1,6 +1,6 @@
 <?php
 
-namespace Excel\Providers;
+namespace h2o\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

@@ -1,0 +1,94 @@
+// Transition mixin
+@mixin transition($arguments...) {
+	transition: $arguments;
+	-webkit-transition: $arguments;
+}
+
+// Transform mixin
+@mixin transform($arguments...) {
+    transform: $arguments;
+    -ms-transform: $arguments;
+    -webkit-transform: $arguments;
+}
+
+// Box-shadow mixin
+@mixin boxShadow($arguments...) {
+    box-shadow: $arguments;
+    -webkit-box-shadow: $arguments;
+}
+
+// Linear gradient mixin
+@mixin linearGradient($top, $bottom){
+    background: $top;
+    background: -moz-linear-gradient(top,  $top 0%, $bottom 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$top), color-stop(100%,$bottom));
+    background: -webkit-linear-gradient(top,  $top 0%,$bottom 100%);
+    background: -o-linear-gradient(top,  $top 0%,$bottom 100%);
+    background: -ms-linear-gradient(top,  $top 0%,$bottom 100%);
+    background: linear-gradient(to bottom,  $top 0%,$bottom 100%);
+}
+
+@mixin ltrGradient($left, $right) {
+    background: $left;
+    background: -moz-linear-gradient(left,  $left 0%, $right 100%);
+    background: -webkit-linear-gradient(left,  $left 0%,$right 100%);
+    background: linear-gradient(to right,  $left 0%,$right 100%);
+}
+
+// Button color helper
+@mixin button($color, $bg) {
+    color: $color;
+    background-color: $bg;
+    border-color: $bg;
+
+    &:hover,
+    &:focus {
+        color: $color;
+        background-color: darken($bg, 10%);
+        border-color: darken($bg, 10%);
+    }
+}
+
+@mixin button-border($color, $bordercolor) {
+    color: $color;
+    background-color: transparent;
+    border-color: $bordercolor;
+
+    > span {
+        &:first-child:after {
+            background-color: $bordercolor;
+        }
+    }
+
+    &:hover,
+    &:focus {
+        color: #fff;
+        background-color: $bordercolor;
+        border-color: $bordercolor;
+    }
+}
+
+@mixin button-gradient($top, $bottom, $direction) {
+    color:#fff;
+    @if $direction == "top" {
+        @include linearGradient($top, $bottom);
+    } @else {
+        @include linearGradient($bottom, $top);
+    }
+
+    &:hover,
+    &:focus {
+        color:#fff;
+        @if $direction == "top" {
+            @include linearGradient($bottom, $top);
+        } @else {
+            @include linearGradient($top, $bottom);
+        }
+    }
+
+}
+
+// Background hex to rgba
+@mixin background-opacity($color, $opacity: 0.5) {
+    background-color: rgba($color, $opacity);
+}

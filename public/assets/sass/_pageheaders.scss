@@ -1,0 +1,29 @@
+.page-header {
+	padding:53.5px 0 51.5px;
+	border:none;
+	margin:0;
+	background-color: #f7f8fc;
+
+	h1,
+	p {
+		font-family: $font-family;
+		margin:0;
+	}
+
+	h1 {
+		font-size: $font-size;
+		font-weight: 600;
+		color: $font-color;
+		text-transform: uppercase;
+
+		& + p {
+			margin-top: 7px;
+		}
+	}
+
+	p {
+		font-size: 1.25rem;
+		font-weight: 400;
+		line-height:1.5;
+	}
+}

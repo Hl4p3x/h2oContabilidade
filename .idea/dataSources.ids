@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - H2O@localhost" uuid="62d524cb-3e07-4c8c-bb9f-34b2051e0bef">
+    <database-info product="MySQL" version="5.5.5-10.1.10-MariaDB" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="mixed" quoted-identifiers="upper"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.4">
+      <schema id="1" name="H2O"/>
+      <table id="2" parent="1" name="contatos"/>
+      <table id="3" parent="1" name="migrations"/>
+      <table id="4" parent="1" name="password_resets"/>
+      <table id="5" parent="1" name="users"/>
+      <column id="6" parent="2" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="7" parent="2" name="nome">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="8" parent="2" name="email">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="9" parent="2" name="telefone">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="10" parent="2" name="assunto">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="11" parent="2" name="mensagem">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="12" parent="2" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <column id="13" parent="2" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <key id="14" parent="2" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="15" parent="3" name="migration">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="16" parent="3" name="batch">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="17" parent="4" name="email">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="18" parent="4" name="token">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="19" parent="4" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <index id="20" parent="4" name="password_resets_email_index">
+        <columns>email</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="21" parent="4" name="password_resets_token_index">
+        <columns>token</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <column id="22" parent="5" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="23" parent="5" name="name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="24" parent="5" name="email">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="25" parent="5" name="password">
+        <mandatory>1</mandatory>
+        <data-type>varchar(60)</data-type>
+      </column>
+      <column id="26" parent="5" name="remember_token">
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="27" parent="5" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <column id="28" parent="5" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <index id="29" parent="5" name="users_email_unique">
+        <columns>email</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="30" parent="5" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <key id="31" parent="5" name="users_email_unique">
+        <columns>email</columns>
+        <underlying-index>users_email_unique</underlying-index>
+      </key>
+    </database-model>
+  </data-source>
+</component>

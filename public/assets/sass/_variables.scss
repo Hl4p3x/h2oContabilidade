@@ -1,0 +1,79 @@
+/////////* Legend Variables *////////////
+
+$root-font-size: 10px;
+$font-size: 1.667rem;
+$font-family: 'Open Sans', Verdana, sans-serif;
+$second-font-family: 'Lato', Verdana, sans-serif;
+
+$font-color: #3b4045;
+
+// Backgrounds
+$body-bg: #dddfec;
+$wrapper-bg: #fff;
+$gray-bg: #f9fafc;
+$dark-bg: #3b4045;
+
+// Color Scheme
+$main-color: #3c51b2;
+$second-color: #8298ff;
+
+// colors
+.bg-custom {
+	background-color: $main-color;
+	color:#fff
+}
+
+.bg-dark {
+	background-color: $dark-bg;
+	color:#fff;
+}
+
+.bg-darker {
+	background-color: #2b2f33;
+	color:#fff;
+}
+
+.bg-gray {
+	background-color: #f9fafc;
+	&.border {
+		border-top:1px solid #eef1f7;
+		border-bottom:1px solid #eef1f7;
+	}
+
+	&.border2 {
+		border-top:1px solid #c8cee8;
+		border-bottom:1px solid #c8cee8;
+	}
+}
+
+.bg-gray2 {
+	background-color: #f8f9fb;
+	&.border {
+		border-top:1px solid #eef1f7;
+		border-bottom:1px solid #eef1f7;
+	}
+}
+
+
+.bg-white {
+	background-color: #fff;
+	&.border {
+		border-top:1px solid #c8cee8;
+		border-bottom: 1px solid #c8cee8;
+	}
+}
+
+.bg-gradient1 {
+	@include ltrGradient(#4776e6, #8e54e9);
+	color:#fff;
+}
+
+.bg-gradient2 {
+	@include ltrGradient(#1a2980, #26d0ce);
+	color:#fff;
+}
+
+.bg-gradient3 {
+	@include ltrGradient(#003973, #e5e5be);
+	color:#fff;
+}

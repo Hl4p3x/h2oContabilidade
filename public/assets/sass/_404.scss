@@ -1,0 +1,82 @@
+.error-page {
+	padding-top:90px;
+	padding-bottom:100px;
+	
+	@media (min-width: 768px) {
+		padding-top:150px;
+		padding-bottom:160px;
+	}
+
+	@media (min-width: 992px) {
+		padding-top:235px;
+		padding-bottom:235px;
+	}
+
+	img {
+		margin-bottom:50px;
+
+		@media (min-width: 768px) {
+			margin-bottom:90px;
+		}
+	}
+
+	h1 {
+		font-size:13rem;
+		margin-bottom:40px;
+		line-height:0.7;
+
+		@media (min-width: 768px) {
+			font-size:36rem;
+			margin-bottom:60px;
+		}
+
+		@media (min-width: 992px) {
+			font-size:50rem;
+			margin-bottom:110px;
+		}
+	}
+
+	h2 {
+		font-size: 2.167rem;
+		margin-bottom:30px;
+
+		@media (min-width: 768px) {
+			font-size: 3.167rem;
+		}
+		
+		@media (min-width: 992px) {
+			font-size: 4.167rem;
+		}
+	}
+
+	p {
+		font-family: $second-font-family;
+		font-weight:300;
+		font-size:1.63rem;
+		line-height:1.37;
+		max-width:760px;
+		margin-left:auto;
+		margin-right:auto;
+		margin-bottom:30px;
+
+		@media (min-width: 768px) {
+			font-size:2.33rem;
+		}
+		
+		@media (min-width: 992px) {
+			font-size:3.33rem;
+			margin-bottom:36px;
+		}
+	}
+
+	.btn.btn-sm {
+		@media (max-width: 767px) {
+			font-size:1.8rem;
+			line-height: 1.8rem;
+
+			&.min-width {
+				min-width: 0;
+			}
+		}
+	}
+}

@@ -1,0 +1,105 @@
+#map {
+	height:420px;
+	background-color: #3b4045;
+	position: relative;
+
+
+	@media (min-width: 768px) {
+		height: 540px;
+
+		.gm-style > div:first-child > div:first-child {
+			&:after {
+				content:'';
+				position: absolute;
+				left:-100%;
+				right:-100%;
+				top:-100%;
+				bottom:-100%;
+				background-color: #3b4045;
+				opacity:0.5;
+				visibility: visible;
+				z-index:1;
+				@include transition(all 0.8s ease);
+				cursor: pointer;
+				height:1000px;
+			}
+		}
+
+		&:hover,
+		&:focus {
+			.gm-style > div:first-child > div:first-child {
+				&:after {
+					opacity:0;
+					visibility: hidden;
+				}
+			}
+		}
+	}
+
+	@media (min-width:1200px) {
+		height:747px;
+	}
+
+	address {
+		font-size:1.4rem;
+		margin:0;
+		padding:15px 10px 10px;
+		line-height: 2;
+	}
+}
+
+#contact-form {
+	.btn.btn-sm {
+		font-size:$font-size;
+		padding-top:11px;
+		padding-bottom:11px;
+		text-transform:uppercase;
+		font-weight:400;
+	}
+
+	label {
+		display: block;
+		font-weight:400;
+		font-size:13px;
+		margin:-22px 0 20px;
+		line-height: 1.5;
+
+		&.error {
+			color: #ca1515;
+		}
+	}
+}
+
+.contact-text {
+	font-family:$second-font-family;
+	font-size:1.25rem;
+	line-height:2;
+	font-weight:400;
+	margin-bottom:40px;
+
+	h4 {
+		margin-bottom:14px;
+	}
+
+	p {
+	 	margin-bottom:13px;
+	 	letter-spacing:1px;
+	}
+
+	a {
+		color:$font-color;
+
+		&:hover,
+		&:focus {
+			color: $main-color;
+		}
+	}
+
+	@media (min-width: 768px) {
+		margin-bottom:50px;
+	}
+
+	@media (min-width: 992px) {
+		margin-bottom:0;
+	}
+}

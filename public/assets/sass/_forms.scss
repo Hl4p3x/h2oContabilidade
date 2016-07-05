@@ -1,0 +1,40 @@
+
+.form-control {
+	margin-bottom:30px;
+	border-color: #b2beca;
+	font-size:$font-size;
+	height:50px;;
+	background-color: transparent;
+	padding:12px 21px;
+	color: darken(#b2beca, 20%);
+	box-shadow:none;
+	-webkit-box-shadow:none;
+	@include transition(all 0.45s);
+
+	&:hover,
+	&:focus {
+		box-shadow:none;
+		-webkit-box-shadow:none;
+		border-color: $main-color;
+	}
+
+	&.error {
+		border-color: #ca1515;
+	}
+}
+
+.form-control::-moz-placeholder {
+	color: darken(#b2beca, 20%);
+}
+.form-control:-ms-input-placeholder {
+	color: darken(#b2beca, 20%);
+}
+.form-control::-webkit-input-placeholder {
+	color: darken(#b2beca, 20%);
+}
+
+textarea.form-control {
+	height:auto;
+	padding: 18px 21px;
+	min-height: 250px;
+}

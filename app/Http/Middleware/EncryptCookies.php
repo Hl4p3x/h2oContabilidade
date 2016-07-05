@@ -1,6 +1,6 @@
 <?php
 
-namespace Excel\Http\Middleware;
+namespace h2o\Http\Middleware;
 
 use Illuminate\Cookie\Middleware\EncryptCookies as BaseEncrypter;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Excel\Http;
+namespace h2o\Http;
 
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
@@ -13,11 +13,11 @@ class Kernel extends HttpKernel
      */
     protected $middleware = [
         \Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode::class,
-        \Excel\Http\Middleware\EncryptCookies::class,
+        \h2o\Http\Middleware\EncryptCookies::class,
         \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
         \Illuminate\Session\Middleware\StartSession::class,
         \Illuminate\View\Middleware\ShareErrorsFromSession::class,
-        \Excel\Http\Middleware\VerifyCsrfToken::class,
+        \h2o\Http\Middleware\VerifyCsrfToken::class,
     ];
 
     /**
@@ -26,8 +26,8 @@ class Kernel extends HttpKernel
      * @var array
      */
     protected $routeMiddleware = [
-        'auth' => \Excel\Http\Middleware\Authenticate::class,
+        'auth' => \h2o\Http\Middleware\Authenticate::class,
         'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
-        'guest' => \Excel\Http\Middleware\RedirectIfAuthenticated::class,
+        'guest' => \h2o\Http\Middleware\RedirectIfAuthenticated::class,
     ];
 }

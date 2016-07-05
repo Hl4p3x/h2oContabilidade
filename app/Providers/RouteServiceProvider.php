@@ -1,6 +1,6 @@
 <?php
 
-namespace Excel\Providers;
+namespace h2o\Providers;
 
 use Illuminate\Routing\Router;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
@@ -14,7 +14,7 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    protected $namespace = 'Excel\Http\Controllers';
+    protected $namespace = 'h2o\Http\Controllers';
 
     /**
      * Define your route model bindings, pattern filters, etc.

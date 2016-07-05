@@ -1,0 +1,333 @@
+.btn {
+	@include transition(background 0.45s, border 0.45s);
+	font-size:3.33rem;
+	font-family: $second-font-family;
+	font-weight:400;
+	padding:5px 15px 6px;
+	border-radius:5px;
+
+	&.btn-sm {
+		font-size:2.5rem;
+		font-weight:300;
+		padding:5px 10px 7px;
+		border-radius:2px;
+		line-height:2.6rem;
+
+		&.btn-rounded {
+			border-radius:5px;
+		}
+
+		&.btn-gradient {
+			padding-top:6px;
+			padding-bottom:8px;
+		}
+	}
+
+	i {
+		margin-right:10px;
+		font-size: 80%;
+		vertical-align:middle;
+		margin-top:-3px;
+	}
+
+	& + .btn {
+		> i {
+			margin-right:7px;
+			margin-left:7px;
+		}
+	}
+
+	&.btn-wicon {
+		display: table;
+		width:100%;
+		padding-right:0;
+		padding-left:0;
+		table-layout:fixed;
+		> span {
+			display: table-cell;
+			vertical-align:middle;
+			position: relative;
+
+			&:first-child {
+				padding:0 14px;
+				width:54px;
+				&:after {
+					content:'';
+					display: block;
+					width:1px;
+					position: absolute;
+					right:0;
+					top:-6px;
+					bottom:-8px;
+					background-color:#fff;
+					@include transition(background 0.4s);
+				}
+
+				i {
+					margin-right:0;
+				}
+			}
+		}
+
+		&:hover,
+		&:focus {
+			span {
+				&:first-child:after  {
+					background-color: #fff !important;
+				}
+			}
+		}
+	}
+
+	&.btn-gradient {
+		border:none;
+		padding-top:6px;
+		padding-bottom:7px;
+	}
+
+	&:active,
+	&.active {
+		box-shadow:none;
+		-webkit-box-shadow:none;
+	}
+
+	&:focus,
+	&:active {
+		outline:none;
+	}
+
+	&.min-width {
+		min-width:170px;
+		text-align:center;
+	}
+
+	&.min-width-sm {
+		min-width:230px;
+		text-align:center;
+	}
+
+	&.min-width-md {
+		min-width:270px;
+		text-align:center;
+	}
+
+	&.text-light {
+		font-weight:300;
+	}
+}
+
+.btn.btn-custom {
+	@include button(#fff, $main-color);
+}
+
+.btn.btn-custom.btn-border {
+	@include button-border($main-color, $main-color);
+}
+
+// lightgreen button
+.btn.btn-lightgreen {
+	@include button(#fff, #7cb23c);
+}
+
+.btn.btn-lightgreen.btn-border {
+	@include button-border(#7cb23c, #7cb23c);
+}
+
+// purple button
+.btn.btn-purple {
+	@include button(#fff, #713cb2);
+}
+
+.btn.btn-purple.btn-border {
+	@include button-border(#713cb2, #713cb2);
+}
+
+// blue button
+.btn.btn-blue {
+	@include button(#fff, #3c84b2);
+}
+
+.btn.btn-blue.btn-border {
+	@include button-border(#3c84b2, #3c84b2);
+}
+
+// green button
+.btn.btn-green {
+	@include button(#fff, #3cb263);
+}
+
+.btn.btn-green.btn-border {
+	@include button-border(#3cb263, #3cb263);
+}
+
+// lightblue button
+.btn.btn-lightblue {
+	@include button(#fff, #00aeff);
+}
+
+// orange button
+.btn.btn-orange {
+	@include button(#fff, #d7771a);
+}
+
+// blue2 button
+.btn.btn-blue2 {
+	@include button(#fff, #5d85ec);
+}
+
+// green2 button
+.btn.btn-green2 {
+	@include button(#fff, #42df2d);
+}
+
+// purple button
+.btn.btn-purple2 {
+	@include button(#fff, #d42688);
+}
+
+// blue3 button
+.btn.btn-blue3 {
+	@include button(#fff, #4a83ec);
+}
+
+// green3 button
+.btn.btn-green3 {
+	@include button(#fff, #26d54b);
+}
+
+// purple3 button
+.btn.btn-purple3 {
+	@include button(#fff, #ec008c);
+}
+
+// green4 button
+.btn.btn-green4 {
+	@include button(#fff, #82ca9c);
+}
+
+// purple4 button
+.btn.btn-purple4 {
+	@include button(#fff, #9e0039);
+}
+
+// brown button
+.btn.btn-brown {
+	@include button(#fff, #8c6239);
+}
+
+// darkgray button
+.btn.btn-darkgray {
+	@include button(#fff, #3b4045);
+}
+
+// green5 button
+.btn.btn-green5 {
+	@include button(#fff, #00746b);
+}
+
+// gray button
+.btn.btn-gray {
+	@include button(#fff, #7d7d7d);
+}
+
+// red button
+.btn.btn-red {
+	@include button(#fff, #ed1c24);
+}
+
+// black button
+.btn.btn-black {
+	@include button(#fff, #111111);
+}
+
+// pink button
+.btn.btn-pink {
+	@include button(#fff, #f06eaa);
+}
+
+// blue4 button
+.btn.btn-blue4 {
+	@include button(#fff, #004a80);
+}
+
+// custom gradient
+.btn.btn-custom.btn-gradient {
+	@include button-gradient(#5371d0, #253295, top);
+}
+
+// lightgreen gradient
+.btn.btn-lightgreen.btn-gradient {
+	@include button-gradient(#acd054, #4f9626, top);
+}
+
+// purple gradient
+.btn.btn-purple.btn-gradient {
+	@include button-gradient(#9d54d0, #472695, top);
+}
+
+// green gradient
+.btn.btn-blue.btn-gradient {
+	@include button-gradient(#54b5d1, #255494, top);
+}
+
+// blue gradient
+.btn.btn-green.btn-gradient {
+	@include button-gradient(#53d08a, #25943c, top);
+}
+
+// custom inverse gradient
+.btn.btn-custom.btn-gradient.inverse {
+	@include button-gradient(#5371d0, #253295, bottom);
+}
+
+// lightgreen inverse gradient
+.btn.btn-lightgreen.btn-gradient.inverse {
+	@include button-gradient(#acd054, #4f9626, bottom);
+}
+
+// purple inverse gradient
+.btn.btn-purple.btn-gradient.inverse {
+	@include button-gradient(#9d54d0, #472695, bottom);
+}
+
+// blue inverse gradient
+.btn.btn-blue.btn-gradient.inverse {
+	@include button-gradient(#54b5d1, #255494, bottom);
+}
+
+// green inverse gradient
+.btn.btn-green.btn-gradient.inverse {
+	@include button-gradient(#53d08a, #25943c, bottom);
+}
+
+.btn.btn-blue5.btn-border {
+	@include button-border(#b5bcdb, #b5bcdb);
+}
+
+// white button
+.btn.btn-white {
+	@include button($font-color, #fff);
+}
+
+// white 2 button
+.btn.btn-white2 {
+	@include button($main-color, #fff);
+}
+
+.btn.btn-white.btn-border {
+	@include button-border(#fff, #fff);
+
+	&:hover,
+	&:focus {
+		color: $font-color !important;
+	}
+}
+
+// dark button
+.btn.btn-dark {
+	@include button(#fff, $font-color);
+}
+
+.btn.btn-dark.btn-border {
+	@include button-border($dark-bg, $dark-bg);
+}

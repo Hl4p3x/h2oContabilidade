@@ -1,0 +1,147 @@
+.member {
+	margin-bottom:30px;
+	figure {
+		margin-bottom:25px;
+		img {
+			display:block;
+			width:100%;
+			height:auto;
+			border-radius:4px;
+		}
+	}
+
+	&,
+	h3 {
+		font-family: $second-font-family;
+		font-style: italic;
+	}
+
+	h3 {
+		font-size:2.083rem;
+		font-weight:400;
+		margin-bottom: 6px;
+	}
+
+	span {
+		color: $main-color;
+	}
+}
+
+.client {
+	display:block;
+	border:1px solid #ebeff5;
+	@include transition(background 0.5s);
+	img {
+		display:block;
+		width:100%;
+		height:auto;
+	}
+
+	&:hover,
+	&:focus {
+		background-color: #fff;
+	}
+}
+
+.panel {
+	border-color:#eff2f7;
+	@include boxShadow(none);
+	border-radius:5px;
+
+	.panel-heading {
+		color:$font-color;
+		padding:0;
+		border-bottom:none;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+
+		.panel-title {
+			font-size: $font-size;
+			font-weight:400;
+			font-family: $font-family;
+
+			a {
+				position: relative;
+				color:$font-color;
+				padding:15px 37px 15px 17px;
+				display: block;
+				background-color: #f9fafc;
+
+				> i {
+					margin-right: 17px;
+				}
+				
+				&:hover,
+				&:focus,
+				&:not(.collapsed) {
+					color: $main-color;
+				}
+
+				&:not(.collapsed) {
+					background-color: #fff;
+				}
+
+				.panel-arrow {
+					font-family:FontAwesome;
+					position: absolute;
+					right:18px;
+					top:50%;
+					@include transition(transform 0.45s);
+					@include transform(translateY(-50%) rotate(-180deg));
+
+					&:after {
+						content: "\f107";
+					}
+				}
+
+				&:not(.collapsed) {
+					.panel-arrow {
+						@include transform(translateY(-50%));
+					}
+				}
+			}
+		}
+	}
+
+	.panel-body {
+		position: relative;
+		font-size:1.458rem;
+		line-height:2.5rem;
+		font-weight:400;
+		padding:18px 17px 20px;
+
+		p:last-child {
+			margin-bottom:0;
+		}
+
+		&:before {
+			content:'';
+			position: absolute;
+			left:17px;
+			right:17px;
+			display: none;
+			height:1px;
+			top:-1px;
+			background-color: #eff2f7;
+		}
+	}
+	
+}
+
+.panel-group {
+	margin-bottom:60px;
+
+	.panel-heading+.panel-collapse {
+		.panel-body {
+			border-top:none;
+
+			&:before {
+				display:block;
+			}
+		}
+	}
+
+	.panel + .panel {
+		margin-top:12px;
+	}
+}

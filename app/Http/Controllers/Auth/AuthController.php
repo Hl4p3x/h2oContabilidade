@@ -1,10 +1,10 @@
 <?php
 
-namespace Excel\Http\Controllers\Auth;
+namespace h2o\Http\Controllers\Auth;
 
-use Excel\Models\User;
+use h2o\Models\User;
 use Validator;
-use Excel\Http\Controllers\Controller;
+use h2o\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 
 class AuthController extends Controller

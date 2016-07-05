@@ -1,6 +1,6 @@
 <?php
 
-namespace Excel\Console;
+namespace h2o\Console;
 
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
@@ -13,7 +13,7 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-        \Excel\Console\Commands\Inspire::class,
+        \h2o\Console\Commands\Inspire::class,
     ];
 
     /**

@@ -1,6 +1,6 @@
 <?php
 
-namespace Excel\Console\Commands;
+namespace h2o\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Foundation\Inspiring;

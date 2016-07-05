@@ -146,10 +146,10 @@ return [
         /*
          * Application Service Providers...
          */
-        Excel\Providers\AppServiceProvider::class,
-        Excel\Providers\EventServiceProvider::class,
-        Excel\Providers\RouteServiceProvider::class,
-        Excel\Providers\RepositoryServiceProvider::class
+        h2o\Providers\AppServiceProvider::class,
+        h2o\Providers\EventServiceProvider::class,
+        h2o\Providers\RouteServiceProvider::class,
+        h2o\Providers\RepositoryServiceProvider::class
 
     ],
 

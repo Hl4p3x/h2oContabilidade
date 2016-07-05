@@ -1,16 +1,16 @@
 <?php
 
-namespace Excel\Repositories;
+namespace h2o\Repositories;
 
 use Prettus\Repository\Eloquent\BaseRepository;
 use Prettus\Repository\Criteria\RequestCriteria;
-use Excel\Repositories\UserRepository;
-use Excel\Models\User;
-use Excel\Validators\UserValidator;
+use h2o\Repositories\UserRepository;
+use h2o\Models\User;
+use h2o\Validators\UserValidator;
 
 /**
  * Class UserRepositoryEloquent
- * @package namespace Excel\Repositories;
+ * @package namespace h2o\Repositories;
  */
 class UserRepositoryEloquent extends BaseRepository implements UserRepository
 {

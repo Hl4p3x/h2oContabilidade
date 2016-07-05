@@ -1,6 +1,6 @@
 <?php
 
-namespace Excel\Models;
+namespace h2o\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Auth\Authenticatable;

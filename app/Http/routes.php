@@ -14,3 +14,15 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/contato', function () {
+    return view('contato.index');
+});
+
+Route::get('contatos/listar', ['as' => 'admin.contato.index', 'uses' => 'ContatoController@index']);
+
+Route::post('contato/gravar', ['as' => 'admin.contato.store', 'uses' => 'ContatoController@store']);
+
+Route::get('contato/excluir/{id}', ['as' => 'admin.contato.destroy', 'uses'=> 'ContatoController@destroy']);
+
+Route::get('contato/exibir/{id}', ['as' => 'admin.contato.show', 'uses' => 'ContatoController@show']);

@@ -11,7 +11,7 @@
 |
 */
 
-$factory->define(Excel\User::class, function ($faker) {
+$factory->define(h2o\User::class, function ($faker) {
     return [
         'name' => $faker->name,
         'email' => $faker->email,

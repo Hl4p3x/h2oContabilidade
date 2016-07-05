@@ -1,0 +1,76 @@
+.breadcrumb-container {
+	border:none;
+	margin:0;
+	font-family: $second-font-family;
+	background-color: #fcfcff;
+	border-top: 1px solid #edeff5;
+	border-bottom: 1px solid #edeff5;
+
+	.breadcrumb {
+		padding:12px 0;
+		margin:0;
+		background-color: transparent;
+		border-radius:0;
+		font-size: 1.25rem;
+		font-weight:400;
+			
+		li {
+			a {
+				color: $font-color;
+
+				&:hover,
+				&:focus {
+					color:$main-color;
+				}
+			}
+		}
+
+		> .active {
+			color: $font-color;
+		}
+
+		li + li {
+			&:before {
+				content: "\f105";
+				font-family: 'FontAwesome';
+				padding:0 13px 0 6px;
+				color: $font-color;
+			}
+		}
+	}
+
+	&:not(.custom) {
+		@include linearGradient(#fbfcff, #fdfdff);
+	}
+
+	&.custom {
+		background-color: $main-color;
+		padding:36px 0;
+		border:none;
+
+		.breadcrumb {
+			font-weight:300;
+			font-size: $font-size;
+			li {
+				a {
+					color: #fff;
+
+					&:hover,
+					&:focus {
+						color:$second-color;
+					}
+				}
+			}
+
+			> .active {
+				color: $second-color;
+			}
+
+			li + li {
+				&:before {
+					color:#fff
+				}
+			}
+		}
+	}
+}

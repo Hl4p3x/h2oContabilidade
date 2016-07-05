@@ -1,6 +1,6 @@
 <?php
 
-namespace Excel\Http\Requests;
+namespace h2o\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
